@@ -3,16 +3,16 @@ Lift-Template
 
 My base template for Lift apps + Buildr.
 
-Equivalent in nature to:
+Equivalent in nature to,
 
- mvn archetype:generate -U \
-   -DarchetypeGroupId=net.liftweb \
-   -DarchetypeArtifactId=lift-archetype-basic \
-   -DarchetypeVersion=1.0 \
-   -DremoteRepositories=http://scala-tools.org/repo-releases \
-   -DgroupId=com.liftworkshop \
-   -DartifactId=todo \
-   -Dversion=0.1-SNAPSHOT
+    mvn archetype:generate -U \
+        -DarchetypeGroupId=net.liftweb \
+        -DarchetypeArtifactId=lift-archetype-basic \
+        -DarchetypeVersion=1.0 \
+        -DremoteRepositories=http://scala-tools.org/repo-releases \
+        -DgroupId=com.liftworkshop \
+        -DartifactId=todo \
+        -Dversion=0.1-SNAPSHOT
 
 but requires less typing and provides more awesome.
 
