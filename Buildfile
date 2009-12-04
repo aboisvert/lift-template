@@ -1,6 +1,6 @@
 require 'buildr/scala'
 require 'dependencies'
-require '~/.buildr/explode'
+require 'tasks/explode'
 
 VERSION_NUMBER = "0.1-SNAPSHOT"
 
@@ -17,7 +17,6 @@ define "lift-template" do
   package(:war).with :libs => [
     ACTIVATION, CODEC, COLLECTIONS, FILEUPLOAD, LIFT, LIFT_MAPPER, LOG4J, SCALA, SLF4J
   ]
-  #package(:war).enhance [directory _("target/webapps")]
   package(:war).explode :target => _("target/webapps/#{project.name}")
 end
 
