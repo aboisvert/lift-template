@@ -1,5 +1,5 @@
 
-p "Loaded ~/.buildr.explode.rb"
+#p "Loaded ~/.buildr.explode.rb"
 
 # Buildr.application.options.trace
 SYMLINK_TRACE = false
@@ -188,7 +188,6 @@ module Buildr
             }
 
             unless @libs.nil? || @libs.empty?
-              p "libs #{libs.inspect}"
               # Make sure artifacts are downloaded
               Buildr.artifacts(@libs).each { |a| a.invoke }
 
